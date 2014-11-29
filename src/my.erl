@@ -115,7 +115,7 @@ prep_stop(_A) ->
 %% @private
 init(_) ->
   {ok,
-    { {one_for_one, 0, 1}, %% Restart strategy
+    { {one_for_one, 10, 10}, %% Restart strategy
       []
     }
   }.
